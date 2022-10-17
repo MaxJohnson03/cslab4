@@ -1,0 +1,5 @@
+def CtoF(celcius):
+    fahrenheit = (celcius * 1.8 + 32)
+    print("The temperature is", fahrenheit,"°F")
+celcius =int(input("Whats the temperature in celcius"))
+CtoF(celcius)
