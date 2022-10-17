@@ -1,0 +1,20 @@
+from statistics import mean
+temp = []
+def average(temp):
+    mintemp = min(temp)
+    maxtemp = max(temp)
+    meantemp = mean(temp)
+    MinMaxMean = input("Would you like the minimum, maximum, or mean?")
+    if MinMaxMean.title() == "Min":
+        print(mintemp)
+    if MinMaxMean.title() == "Max":
+       print(maxtemp)
+    if MinMaxMean.title() == "Mean":
+       print(meantemp)
+while True:
+    temperature = input("Enter a temperature in celcius. ")
+    if temperature == "":
+        break
+    else:
+        temp.append(int(temperature))
+average(temp)
