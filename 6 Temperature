@@ -1,0 +1,15 @@
+from statistics import mean
+temp = []
+while len(temp) != 6:
+    temp.append(int(input("Enter the temperature in Celsius")))
+
+mintemp = min(temp)
+maxtemp = max(temp)
+meantemp = mean(temp)
+MinMaxMean = input("Would you like the minimum, maximum, or mean?")
+if MinMaxMean.title() == "Min":
+    print(mintemp)
+if MinMaxMean.title() == "Max":
+    print(maxtemp)
+if MinMaxMean.title() == "Mean":
+    print(meantemp)
