@@ -1,0 +1,15 @@
+ CtoF(celcius):
+    fahrenheit=(celcius * 1.8 + 32)
+    print(fahrenheit)
+def FtoC(fahrenheit):
+    celcius=(fahrenheit -32 / 1.8)
+
+Conversion =input("Do you want to convert from celcius or fahrenheit? ")
+if Conversion == "Celcius" or Conversion == "celcius":
+    celcius =int(input("Enter a temperature in celcius"))
+    CtoF(celcius)
+elif Conversion == "Fahrenheit" or Conversion == "fahrenheit":
+    fahrenheit =int(input("Enter a temperature in fahrenheit"))
+    FtoC(fahrenheit)
+else:
+    print("Error")
