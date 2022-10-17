@@ -1,0 +1,11 @@
+text =input("Enter a message")
+def charactercount(text):
+    Lowercount = 0
+    Uppercount = 0
+    for letter in text:
+        if letter.isupper():
+            Uppercount +=1
+        elif letter.islower():
+            Lowercount +=1
+    print(Uppercount,Lowercount)
+charactercount(text)
